@@ -8,7 +8,9 @@ tag:
 toc: true
 ---
 近期在构思一个产品，考虑到安全性的原因，可能需要使用到HTTPS协议以及双向数字证书校验。之前只是粗浅接触过HTTP（使用Golang开 发微信系列）。对HTTPS的了解则始于那次自行搭建ngrok服务，在那个过程中照猫画虎地为服务端生成了一些私钥和证书，虽然结果是好 的：ngrok服务成功搭建起来了，但对HTTPS、数字证书等的基本原理并未求甚解。于是想趁这次的机会，对HTTPS做一些深度挖掘。主要途 径：翻阅网上资料、书籍，并利用golang编写一些实验examples。  
+
 ### HTTPS简介
+
 日常生活中，我们上网用的最多的应用层协议就是HTTP协议了，直至目前全世界的网站中大多数依然只支持HTTP访问。  
 
 使用Go创建一个HTTP Server十分Easy，十几行代码就能搞定：  
@@ -524,3 +526,5 @@ client端证书验证成功，也就是说双向证书验证均ok了。
 
 ### 小结
 通过上面的例子可以看出，使用golang开发https相关程序十分便利，Golang标准库已经实现了TLS 1.2版本协议。上述所有example代码均放在我的github上的experiments/gohttps中。
+
+> 作者: Tonybai 出处: http://tonybai.com/2015/04/30/go-and-https/ 

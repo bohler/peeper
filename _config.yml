@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 一只雅
+title: 渔
 subtitle: You know nothing
 description: You know nothing
-author: Peeper
+author: Pescaria
 language: zh-CN
 timezone: Asia/Shanghai
 
@@ -79,8 +79,78 @@ theme: maupassant
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/bohler/bohler.github.io.git
+  repo: git@github.com:pescaria/pescaria.github.io.git
   branch: master
 
 mathjax: true
 
+
+fancybox: true ## If you want to use fancybox please set the value to true.
+duoshuo: ## Your duoshuo_shortname, e.g. username
+disqus: peep-1 ## Your disqus_shortname, e.g. username
+uyan: ## Your uyan_id. e.g. 1234567
+gentie: ## Your gentie_productKey, e.g. fc799538c7ad4cf5a5a0c2877a90cbd7
+changyan: ## Your changyan appid
+changyan_conf: ## You changyan conf
+google_search: ## Use Google search, true/false.
+baidu_search: ## Use Baidu search, true/false.
+swiftype: ## Your swiftype_key, e.g. m7b11ZrsT8Me7gzApciT
+tinysou: ## Your tinysou_key, e.g. 4ac092ad8d749fdc6293
+self_search: true ## Use a jQuery-based local search engine, true/false.
+google_analytics: ## Your Google Analytics tracking id, e.g. UA-42425684-2
+baidu_analytics: ## Your Baidu Analytics tracking id, e.g. 8006843039519956000
+show_category_count: true ## If you want to show the count of categories in the sidebar widget please set the value to true.
+toc_number: true ## If you want to add list number to toc please set the value to true.
+shareto: true ## If you want to use the share button please set the value to true.
+busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
+widgets_on_small_screens: true ## Set to true to enable widgets on small screens.
+
+menu:
+  - page: 首页
+    directory: .
+    icon: fa-home
+  - page: 文章列表
+    directory: archives/
+    icon: fa-archive
+  - page: 关于
+    directory: about/
+    icon: fa-user
+  - page: 历史
+    directory: timeline/
+    icon: fa-history
+  - page: rss
+    directory: atom.xml
+    icon: fa-rss
+
+widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
+  - search
+  - category
+  - tag
+  - recent_posts
+  - recent_comments
+  - links
+
+links:
+  - title: 编程随想
+    url: https://program-think.blogspot.com/
+  - title: tonybai
+    url: http://tonybai.com/
+  - title: 鸟窝
+    url: http://colobu.com/
+
+timeline:
+  - num: 1
+    word: 2010/09 Start 吉首大学-通信工程
+  - num: 2
+    word: 2013/11 深圳前海捷联金融服务有限公司-linux c 后台开发工程师
+  - num: 3
+    word: 2015/8  深圳天宇蓝科技有限公司-golang 后台开发工程师  
+  - num: 
+    word: Future
+
+# Static files
+js: js
+css: css
+
+# Theme version
+version: 0.0.0
